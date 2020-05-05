@@ -1,7 +1,15 @@
 
 <!-- Pense-bête
-
   
+  traduire les class et id en anglais
+  nettoyer code js
+  nettoyer code css
+  supprimer (virtualiser) la colonne des listes enregistrées
+  revoir mise en forme : 
+    titre de liste souligné sur fond blanc
+    diminuer tailles polices 
+    encadrer les lignes de façon invisible
+    ...  
 
 
   -->
@@ -11,249 +19,178 @@
 
     <meta charset="UTF-8">
     <link href="style-g-list.css" rel="stylesheet" media="all" type="text/css"> 
-    <title>EverList - gestionnaire de tâches</title>
-    <meta name="description" content="Tentative de créer un modèle au format html d'un prototype de gestionnaire de listes et de tâches" />
-    <meta name="keywords" content="liste, tâches, étiquettes, prototype" />
+    <title>g-List - gestionnaire de listes</title>
+    <meta name="description" content="Proposition d'une application web gestionnaire de listes et de tâches uniquement basée sur un système d'étiquettes." />
+    <meta name="keywords" content="liste, tâches, gestionnaire, étiquettes, libellés, filtres, prototype, sémantique" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" /> <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon-120x120-precomposed.png" /> <link rel="apple-touch-icon" sizes="152x152" href="images/apple-touch-icon-152x152-precomposed.png" />
-
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> 
 
   </head>
 
   <body>
+    <!-- conteneur de la page -->
     <div id="tableau">
+      <!-- entête virtuel au cas où... -->
       <div id="entete">
       </div>
 
+      <!-- colonne des listes enregistrées -->
       <div class="env-col" id="env-col-listes">
       
-      <div id="entete-listes">Listes</div>
+        <div id="entete-listes">Listes</div>
 
-      <div id="piano">
-        
+        <div id="piano">
           <ul>
-          <li>
-            <span >Courses</span></li>
-          <li>
-            <span >Travaux</span></li>
-          <li>
-            <span >Jeux en développement</span></li>
-          <li>
-            <span >Contacts kiné</span></li>
-        </ul>
+            <li>
+              <span >Courses</span></li>
+            <li>
+              <span >Travaux</span></li>
+            <li>
+              <span >Jeux en développement</span></li>
+            <li>
+              <span >Contacts kiné</span></li>
+          </ul>
         </div>
 
       </div>
 
-      
-
+      <!-- colonne de la 1ere liste -->
       <div id="env-col1" class="env-col">
+
         <div class="entete-col">
           <div class="env-pictos">Pictos gest. col. 1</div>
-        
           <div class="titre-col">Autre</div>
         </div>
 
         <div class="colonne">
           <ul>
-          <li>
-            <span class="ligne">Coller casier à vin</span></li>
-          <li>
-            <span class="ligne">Envoyer texto Pons et Goume</span></li>
-          <li>
-            <span class="ligne">Vélo / gym ski</span></li>
-         
-        </ul>
-
+            <li>
+              <span class="ligne">Coller casier à vin</span></li>
+            <li>
+              <span class="ligne">Envoyer texto Pons et Goume</span></li>
+            <li>
+              <span class="ligne">Vélo / gym ski</span></li>
+          </ul>
         </div>
+
       </div>
 
+      <!-- colonne de la 2e liste -->
       <div id="env-col2" class="env-col">
-        <div class="entete-col">
 
+        <div class="entete-col">
           <div class="env-pictos">Pictos gest. col. 2</div>
-
           <div class="titre-col">S'informer</div>
-
         </div>
-        
-        
-    
-
+ 
         <div class="colonne">
-        <ul>
-          <li>
-            <span class="ligne">Trajet ski</span></li>
-          <li>
-            <span class="ligne">Crédit tél sur facture Bouygues et plus</span></li>
-          <li>
-            <span class="ligne">Formation kiné</span></li>
-           <li>
-            <span class="ligne">Dossier personnel retraite</span></li>
-        </ul>
+          <ul>
+            <li>
+              <span class="ligne">Trajet ski</span></li>
+            <li>
+              <span class="ligne">Crédit tél sur facture Bouygues et plus</span></li>
+            <li>
+              <span class="ligne">Formation kiné</span></li>
+            <li>
+              <span class="ligne">Dossier personnel retraite</span></li>
+          </ul>
         </div>
+
       </div>
 
+      <!-- colonne de la 3e liste -->
       <div id="env-col3" class="env-col">
-        <div class="entete-col">
 
+        <div class="entete-col">
           <div class="env-pictos">V      X      O      Y       T</div>
-        
-         
-        
-        <div class="titre-col">A faire</div>
+          <div class="titre-col">A faire</div>
         </div>
 
         <div class="colonne">
-        <ul>
-          <li>
-            <span class="ligne">Coller casier à vin</span></li>
-          <li>
-            <span class="ligne">Envoyer texto Pons et Goume</span></li>
-          <li>
-            <span class="ligne">Vélo / gym ski</span></li>
-          <li>
-            <span class="ligne">Passes salsa</span></li>
-        </ul>
+          <ul>
+            <li>
+              <span class="ligne">Coller casier à vin</span></li>
+            <li>
+              <span class="ligne">Envoyer texto Pons et Goume</span></li>
+            <li>
+              <span class="ligne">Vélo / gym ski</span></li>
+            <li>
+              <span class="ligne">Passes salsa</span></li>
+          </ul>
         </div>
-
 
       </div>
 
-
+      <!-- colonne des étiquettes -->
       <div id="env-col-etiquettes" >
-        <div id="entete-etiquettes">
-          Etiquettes
-        </div>
+
+        <div id="entete-etiquettes">Etiquettes</div>
+
         <div id="col-etiquettes" >
-        <ul>
-          <li>
-            <span class="etiquette">Aujourd'hui</span></li>
-          <li>
-            <span class="etiquette">En attente</span></li>
-          <li>
-            <span class="etiquette">Important</span></li>
-          <li>
-            <span class="etiquette">Maison</span></li>
-           <li>
-            <span class="etiquette">Kiné</span></li>
-          <li>
-            <span class="etiquette">Ludi Nostrum</span></li>
-          <li>
-            <span class="etiquette">Mes jeux</span></li>
-          <li>
-            <span class="etiquette">Recettes</span></li>
-        </ul>
+          <ul>
+            <li>
+              <span class="etiquette">Aujourd'hui</span></li>
+            <li>
+              <span class="etiquette">En attente</span></li>
+            <li>
+              <span class="etiquette">Important</span></li>
+            <li>
+              <span class="etiquette">Maison</span></li>
+             <li>
+              <span class="etiquette">Kiné</span></li>
+            <li>
+              <span class="etiquette">Ludi Nostrum</span></li>
+            <li>
+              <span class="etiquette">Mes jeux</span></li>
+            <li>
+              <span class="etiquette">Recettes</span></li>
+          </ul>
+        </div>
+
       </div>
-      </div>
 
-    </div>
-
-   
-    <!--script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js" ></script>
-    <script src="app.js"></script-->
-
-    <script src="../jquery.js"></script> 
+    </div>    <!-- fermeture tableau -->
 
 
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
+    <!-- scripts javascript -->
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-
-     <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-database.js"></script>
-
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyC0ofFcp7F9whHjAcystB2-hMKuAmnviMc",
-    authDomain: "gestionnaire-de-listes.firebaseapp.com",
-    databaseURL: "https://gestionnaire-de-listes.firebaseio.com",
-    projectId: "gestionnaire-de-listes",
-    storageBucket: "gestionnaire-de-listes.appspot.com",
-    messagingSenderId: "548304751886",
-    appId: "1:548304751886:web:4dd1d906491df19b"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+    <script type="text/javascript" src="../jquery.js"></script> 
+    <!-- script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script -->
 
 
-  var database = firebase.database();//.ref('lignes');
-  //var lignes = database.ref('En cours');
-
-  var auj = database.ref('listes/Aujourd\'hui');
-  auj.on('value', function(snapshot) {
-  alert(snapshot.val());
-});
-
-  //alert(lignes);
-
-
-
-</script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-database.js"></script>
 
     <script>
-  $(function() {
-
-  $('.env-pictos').css('opacity', '0');
-
-  //$(reseau.children[1]).fadeIn(100);
-  
-  $('.entete-col').mouseenter(function(){
-    $(this).children().first().animate({opacity: 1}, 300);      
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyC0ofFcp7F9whHjAcystB2-hMKuAmnviMc",
+        authDomain: "gestionnaire-de-listes.firebaseapp.com",
+        databaseURL: "https://gestionnaire-de-listes.firebaseio.com",
+        projectId: "gestionnaire-de-listes",
+        storageBucket: "gestionnaire-de-listes.appspot.com",
+        messagingSenderId: "548304751886",
+        appId: "1:548304751886:web:4dd1d906491df19b"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      var database = firebase.database();//.ref('lignes');
+      //var lignes = database.ref('En cours');
+      var auj = database.ref('listes/Aujourd\'hui');
+      auj.on('value', function(snapshot) {
+      alert(snapshot.val());
     });
+      //alert(lignes);
 
-  $('.entete-col').mouseleave(function(){
-    $(this).children().first().animate({opacity: 0}, 300);      
-    });
-
-  $('.env-pictos').mouseenter(function(){
-    $(this).css('cursor','pointer');      
-    });
-
-  $('.env-pictos').mouseleave(function(){
-    $(this).css('cursor','auto');      
-    });
-
-  /*$('span.titre-col').mouseenter(function(){
-    $(this).animate({left: -50}, 200, 'swing');      
-    });
-
-  $('span.titre-col').mouseleave(function(){
-    $(this).animate({left: 0}, 200, 'swing');      
-    });*/
-
-  $('#piano ul').mouseenter(function(){
-    $(this).animate({width: 250}, 200, 'swing');      
-    });
-
-  $('#piano ul').mouseleave(function(){
-    $(this).animate({width: 145}, 200, 'swing');      
-    });
-
-  $('#piano ul li').mouseenter(function(){
-    $(this).css('background-color','#58ACFA').css('cursor','pointer');      
-    });
-
-  $('#piano ul li').mouseleave(function(){
-    $(this).css('background-color','transparent').css('cursor','auto');    
-    });
-
-  $('span.etiquette').mouseenter(function(){
-    $(this).css('border-color','#FAFAFA').css('cursor','default');      
-    });
-
-  $('span.etiquette').mouseleave(function(){
-    $(this).css('border-color','#585858').css('cursor','auto');   
-    });
-
-  });
     </script>
 
+    <script type="text/javascript" src="animations.js"></script>
 
 
   </body>
-  </html>
+</html>
