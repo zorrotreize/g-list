@@ -1,3 +1,4 @@
+
 /*       INITIALISATION            */
 
 html, body, p, div, h1, h2, h3, h4, h6, span, ul {
@@ -14,13 +15,6 @@ body {
 	font-size: 20px;
 }
 
-
-
-
-img {
-	max-width: 1000px;
-}
-
 ul {
 	list-style-type: none;
 }
@@ -31,36 +25,13 @@ li {
 }
 
 
-/*
 
-a:link { 
- text-decoration: none;
- color: black;
-}
-li a:hover, span a:hover {
-	font-weight: bold;
-	text-decoration: underline;
-}
 
-a:hover h3 {
-	text-decoration: underline;
-}
-
-a:visited {
-	color: gray;
-}
-
-a:active {
-	color: red;
-} 
-*/
-
-/*                  TABLEAU                    */
+/*         TABLEAU            */
 
 #tableau {
 	width:100%;
 }
-
 
 .env-col {
 	width: 300px;
@@ -69,12 +40,13 @@ a:active {
 	min-height: 600px;
 }
 
+/*       Colonne de listes      */
+
 #env-col-listes {
 	width: 150px;
 	padding-left: 5px;
 	position: relative;
 	margin-right: 10px;
-	/*overflow: hidden;*/
 }
 
 #entete-listes {
@@ -104,16 +76,16 @@ div#piano {
 	/*border: 1px solid #CACACA;*/
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
-
 }
 
+/*     3 colonnes-listes    */
+
 .entete-col {
-	color: #045FB4;/*#FAFAFA;*/
+	color: #045FB4;
 	padding: 0 6px;
 	min-width: 240px;
 	margin-top: 5px;
 	margin-bottom: 15px;
-	
 }
 
 .env-pictos {
@@ -123,25 +95,29 @@ div#piano {
 
 .titre-col {
 	font-size: 25px;
-	background-color: #58ACFA;/*#81BEF7;/*#045FB4;/*#585858;/*#58ACFA;*/
+	background-color: #58ACFA;
 	color: #FAFAFA;
 	padding: 10px;
 	border-bottom-right-radius: 10px;
 	border-top-right-radius: 10px;
 	box-shadow: 4px 4px 10px 5px #BDBDBD;
-
 }
 
+/*span.titre-col {
+	margin: 0px;
+	box-shadow: 0 0;
+	font-size: 20px;
+	display: block;
+	position: relative;
+	left: 0px;
+}*/
 
 .colonne ul li {
 	width: 400px;
-	
-	
-
 }
 
 span.ligne {
-	background-color: white; /*#EDF2C3;*/
+	background-color: white; 
 	border-radius: 15px;
 	box-shadow: 6px 6px 20px 4px #E6E6E6;
 	padding: 6px 10px;
@@ -150,29 +126,17 @@ span.ligne {
 	padding-right: 10px;
 	display: inline-block;
 	max-height: 20px;
-	
 }
 
 
-
-
-span.titre-col {
-	margin: 0px;
-	box-shadow: 0 0;
-	font-size: 20px;
-	display: block;
-	position: relative;
-	left: 0px;
-}
+/*     colonne d'étiquettes      */
 
 div#env-col-etiquettes {
 	width: 130px;
 	padding: 5px;
 	display: inline-block;
-	
 	position: absolute;
 	right: 0;
-
 }
 
 div#entete-etiquettes {
@@ -192,8 +156,6 @@ div#col-etiquettes ul {
 }
 
 div#col-etiquettes ul li {
-	
-
 }
 
 span.etiquette {
