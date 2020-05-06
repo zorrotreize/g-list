@@ -2,7 +2,6 @@
 <!-- Pense-bête
   
   traduire les class et id en anglais
-  supprimer (virtualiser) la colonne des listes enregistrées
   revoir mise en forme : 
     titre de liste souligné sur fond blanc
     diminuer tailles polices 
@@ -157,35 +156,12 @@
     <script type="text/javascript" src="../jquery.js"></script> 
     <!-- script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script -->
 
-
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
     <!-- TODO: Add SDKs for Firebase products that you want to use
          https://firebase.google.com/docs/web/setup#available-libraries -->
     <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-database.js"></script>
-
-    <script>
-      // Your web app's Firebase configuration
-      var firebaseConfig = {
-        apiKey: "AIzaSyC0ofFcp7F9whHjAcystB2-hMKuAmnviMc",
-        authDomain: "gestionnaire-de-listes.firebaseapp.com",
-        databaseURL: "https://gestionnaire-de-listes.firebaseio.com",
-        projectId: "gestionnaire-de-listes",
-        storageBucket: "gestionnaire-de-listes.appspot.com",
-        messagingSenderId: "548304751886",
-        appId: "1:548304751886:web:4dd1d906491df19b"
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-      var database = firebase.database();//.ref('lignes');
-      //var lignes = database.ref('En cours');
-      var auj = database.ref('listes/Aujourd\'hui');
-      auj.on('value', function(snapshot) {
-      alert(snapshot.val());
-    });
-      //alert(lignes);
-
-    </script>
+    <script type="text/javascript" src="firebase-config.js"></script>
 
     <script type="text/javascript" src="animations.js"></script>
 
