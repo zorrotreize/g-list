@@ -40,9 +40,14 @@ li {
 	min-height: 600px;
 }
 
-/*       Colonne de listes      */
+/*       Colonne de listes     */
+
 
 #env-col-listes {
+	display: none;
+}
+
+/*#env-col-listes {
 	width: 150px;
 	padding-left: 5px;
 	position: relative;
@@ -64,8 +69,8 @@ div#piano {
 
 #piano ul {
 	padding: 15px 5px 15px 0px;
-	background-color: #2074C2;/*#0074e8;/*#CACACA;*/
-	width: 145px;/*faire varier cette largeur en dynamique*/
+	background-color: #2074C2;
+	width: 145px;
 }
 
 #piano ul li {
@@ -73,12 +78,15 @@ div#piano {
 	padding: 3px 5px;
 	color: white;
 	font-size: 17px;
-	/*border: 1px solid #CACACA;*/
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
-}
+}*/
 
 /*     3 colonnes-listes    */
+
+#env-col1 {
+	margin-left: 100px;
+}
 
 .entete-col {
 	color: #045FB4;
