@@ -40,7 +40,7 @@ li {
 	min-height: 600px;
 }
 
-/*       Colonne de listes     */
+/*       list column     */
 
 
 #list-column-wrap {
@@ -82,7 +82,7 @@ div#list-column {
 	border-bottom-right-radius: 5px;
 }*/
 
-/*     3 colonnes-listes    */
+/*     3 lists    */
 
 #col1-wrap {
 	margin-left: 100px;
@@ -137,7 +137,7 @@ span.line {
 }
 
 
-/*     colonne d'étiquettes      */
+/*     label column      */
 
 div#label-column-wrap {
 	width: 130px;

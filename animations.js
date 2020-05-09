@@ -1,6 +1,6 @@
 $(function() {
 
-  // animmations des pictos en haut des colonnes-listes
+  // picto animations in the top of lists
 
   $('.pictos-bar').css('opacity', '0');
   
@@ -20,7 +20,7 @@ $(function() {
     $(this).css('cursor','auto');      
     });
 
-  // //élargissement de la colonne des listes
+  // //changing width of list column
 
   // $('#list-column ul').mouseenter(function(){
   //   $(this).animate({width: 250}, 200, 'swing');      
@@ -40,7 +40,7 @@ $(function() {
   //   $(this).css('background-color','transparent').css('cursor','auto');    
   //   });
 
-  // focus d'une étiquette
+  // focus on label
 
   $('span.label').mouseenter(function(){
     $(this).css('border-color','#FAFAFA').css('cursor','default');      
