@@ -27,13 +27,13 @@ li {
 
 
 
-/*         TABLEAU            */
+/*         GLOBAL-UI            */
 
-#tableau {
+#global-ui {
 	width:100%;
 }
 
-.env-col {
+.column-wrap {
 	width: 300px;
 	display: inline-block;
 	vertical-align: top;
@@ -43,37 +43,37 @@ li {
 /*       Colonne de listes     */
 
 
-#env-col-listes {
+#list-column-wrap {
 	display: none;
 }
 
-/*#env-col-listes {
+/*#list-column-wrap {
 	width: 150px;
 	padding-left: 5px;
 	position: relative;
 	margin-right: 10px;
 }
 
-#entete-listes {
+#list-column-header {
 	font-size: 20px;
 	margin: 37px 0px 17px 5px;
 	color: #585858;
 }
 
-div#piano {
+div#list-column {
 	overflow: hidden;
 	position: absolute;
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
 }
 
-#piano ul {
+#list-column ul {
 	padding: 15px 5px 15px 0px;
 	background-color: #2074C2;
 	width: 145px;
 }
 
-#piano ul li {
+#list-column ul li {
 	width: 245px;
 	padding: 3px 5px;
 	color: white;
@@ -84,11 +84,11 @@ div#piano {
 
 /*     3 colonnes-listes    */
 
-#env-col1 {
+#col1-wrap {
 	margin-left: 100px;
 }
 
-.entete-col {
+.column-header {
 	color: #045FB4;
 	padding: 0 6px;
 	min-width: 240px;
@@ -96,12 +96,12 @@ div#piano {
 	margin-bottom: 15px;
 }
 
-.env-pictos {
+.pictos-bar {
 	opacity: 0.8;
 	margin-bottom: 2px;
 }
 
-.titre-col {
+.list-title {
 	font-size: 25px;
 	background-color: #58ACFA;
 	color: #FAFAFA;
@@ -120,11 +120,11 @@ div#piano {
 	left: 0px;
 }*/
 
-.colonne ul li {
+.list-column ul li {
 	width: 400px;
 }
 
-span.ligne {
+span.line {
 	background-color: white; 
 	border-radius: 15px;
 	box-shadow: 6px 6px 20px 4px #E6E6E6;
@@ -139,7 +139,7 @@ span.ligne {
 
 /*     colonne d'étiquettes      */
 
-div#env-col-etiquettes {
+div#label-column-wrap {
 	width: 130px;
 	padding: 5px;
 	display: inline-block;
@@ -147,26 +147,26 @@ div#env-col-etiquettes {
 	right: 0;
 }
 
-div#entete-etiquettes {
+div#label-column-header {
 	font-size: 20px;
 	margin: 5px 0px;
 	color: #585858;
 }
 
-div#col-etiquettes {
+div#label-column {
 	background-color: #585858;
 	min-height: 1000px;
 	padding: 2px;
 }
 
-div#col-etiquettes ul {
+div#label-column ul {
 	padding: 0px;
 }
 
-div#col-etiquettes ul li {
+div#label-column ul li {
 }
 
-span.etiquette {
+span.label {
 	background-color: transparent;
 	color: #FAFAFA;
 	font-size: 12px;

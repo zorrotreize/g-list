@@ -2,51 +2,51 @@ $(function() {
 
   // animmations des pictos en haut des colonnes-listes
 
-  $('.env-pictos').css('opacity', '0');
+  $('.pictos-bar').css('opacity', '0');
   
-  $('.entete-col').mouseenter(function(){
+  $('.column-header').mouseenter(function(){
     $(this).children().first().animate({opacity: 1}, 300);      
     });
 
-  $('.entete-col').mouseleave(function(){
+  $('.column-header').mouseleave(function(){
     $(this).children().first().animate({opacity: 0}, 300);      
     });
 
-  $('.env-pictos').mouseenter(function(){
+  $('.pictos-bar').mouseenter(function(){
     $(this).css('cursor','pointer');      
     });
 
-  $('.env-pictos').mouseleave(function(){
+  $('.pictos-bar').mouseleave(function(){
     $(this).css('cursor','auto');      
     });
 
-  // élargissement de la colonne des listes
+  // //élargissement de la colonne des listes
 
-  $('#piano ul').mouseenter(function(){
-    $(this).animate({width: 250}, 200, 'swing');      
-    });
+  // $('#list-column ul').mouseenter(function(){
+  //   $(this).animate({width: 250}, 200, 'swing');      
+  //   });
 
-  $('#piano ul').mouseleave(function(){
-    $(this).animate({width: 145}, 200, 'swing');      
-    });
+  // $('#list-column ul').mouseleave(function(){
+  //   $(this).animate({width: 145}, 200, 'swing');      
+  //   });
 
-  // focus d'une liste
+  // //focus d'une liste
 
-  $('#piano ul li').mouseenter(function(){
-    $(this).css('background-color','#58ACFA').css('cursor','pointer');      
-    });
+  // $('#list-column ul li').mouseenter(function(){
+  //   $(this).css('background-color','#58ACFA').css('cursor','pointer');      
+  //   });
 
-  $('#piano ul li').mouseleave(function(){
-    $(this).css('background-color','transparent').css('cursor','auto');    
-    });
+  // $('#list-column ul li').mouseleave(function(){
+  //   $(this).css('background-color','transparent').css('cursor','auto');    
+  //   });
 
   // focus d'une étiquette
 
-  $('span.etiquette').mouseenter(function(){
+  $('span.label').mouseenter(function(){
     $(this).css('border-color','#FAFAFA').css('cursor','default');      
     });
 
-  $('span.etiquette').mouseleave(function(){
+  $('span.label').mouseleave(function(){
     $(this).css('border-color','#585858').css('cursor','auto');   
     });
 
