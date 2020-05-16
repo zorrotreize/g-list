@@ -1,5 +1,10 @@
 $(function() {
 
+  // initialisations
+
+  var labelClicState = false;
+
+
   // picto animations in the top of lists
 
   $('.pictos-bar').css('opacity', '0');
@@ -18,6 +23,27 @@ $(function() {
 
   $('.pictos-bar').mouseleave(function(){
     $(this).css('cursor','auto');      
+    });
+
+// focus on list title
+
+  $('.list-title').mouseenter(function(){
+    $(this).css('background-color','white').css('box-shadow', '4px 4px 10px 2px #E6E6E6').css('cursor','pointer');      
+    });
+
+  $('.list-title').mouseleave(function(){
+    $(this).css('background-color','transparent').css('box-shadow', 'none').css('cursor','auto');      
+    });
+
+  // focus on line
+
+  $('span.line').mouseenter(function(){
+    $(this).css('background-color','white').css('box-shadow', '4px 4px 10px 2px #E6E6E6').css('cursor','pointer');      
+    });
+  // css('box-shadow', '6px 6px 20px 4px #E6E6E6')
+
+  $('span.line').mouseleave(function(){
+    $(this).css('background-color','transparent').css('box-shadow', 'none').css('cursor','auto');      
     });
 
   // //changing width of list column
@@ -42,13 +68,41 @@ $(function() {
 
   // focus on label
 
-  $('span.label').mouseenter(function(){
-    $(this).css('border-color','#FAFAFA').css('cursor','default');      
-    });
+  $('[class*="labeloff"]').mouseenter(function(){
+      $(this).css('background-color','#0489B1').css('cursor','pointer');    
+      });
 
-  $('span.label').mouseleave(function(){
-    $(this).css('border-color','#585858').css('cursor','auto');   
-    });
+  $('[class*="labelon"]').mouseenter(function(){
+        $(this).css('background-color','#87C7DA').css('cursor','pointer');    
+        });
+
+  $('[class*="labeloff"]').mouseleave(function(){
+      $(this).css('background-color','#87C7DA').css('cursor','auto');    
+      });
+
+  $('[class*="labelon"]').mouseleave(function(){
+      $(this).css('background-color','#0489B1').css('cursor','auto');    
+      });
 
   });
+
+  // clic on label
+
+  $('[class*="label"]').click(function(){
+      labelClicState = !labelClicState;  
+      });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

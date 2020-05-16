@@ -1,12 +1,9 @@
 
 <!-- Pense-bête
   
-  traduire les class et id en anglais
-  revoir mise en forme : 
-    titre de liste souligné sur fond blanc
-    diminuer tailles polices 
-    encadrer les lignes de façon invisible
-    ...  
+  onclick > label ...
+  onclick line ...
+  corriger margins et paddings
   application non prévue pour smartphones (et ipads ?)
 
   -->
@@ -33,7 +30,7 @@
       <div id="global-header">
       </div>
 
-      <!-- saved list column -->
+      <!-- saved lists column -->
       <div class="column-wrap" id="list-column-wrap">
       
         <div id="list-column-header">Listes</div>
@@ -59,9 +56,12 @@
         <div class="column-header">
           <div class="pictos-bar">Pictos gest. col. 1</div>
           <div class="list-title">Autre</div>
+          <div class="label-zone">
+            
+          </div>
         </div>
 
-        <div class="list-column">
+        <div class="line-list">
           <ul>
             <li>
               <span class="line">Coller casier à vin</span></li>
@@ -80,9 +80,17 @@
         <div class="column-header">
           <div class="pictos-bar">Pictos gest. col. 2</div>
           <div class="list-title">S'informer</div>
+          <div class="label-zone">
+            <span class="label labelon">Aujourd'hui</span>
+            <span class="label labelon">Important</span>
+            <span class="label labelon">Kiné</span>
+            <br>
+            <span class="label labeloff">Ludi Nostrum</span>
+            <span class="label labeloff">Recettes</span>
+          </div>
         </div>
  
-        <div class="list-column">
+        <div class="line-list">
           <ul>
             <li>
               <span class="line">Trajet ski</span></li>
@@ -92,6 +100,8 @@
               <span class="line">Formation kiné</span></li>
             <li>
               <span class="line">Dossier personnel retraite</span></li>
+              <li>
+              <span class="line"> +            </span></li>
           </ul>
         </div>
 
@@ -103,9 +113,12 @@
         <div class="column-header">
           <div class="pictos-bar">V      X      O      Y       T</div>
           <div class="list-title">A faire</div>
+          <div class="label-zone">
+            
+          </div>
         </div>
 
-        <div class="list-column">
+        <div class="line-list">
           <ul>
             <li>
               <span class="line">Coller casier à vin</span></li>
@@ -128,21 +141,23 @@
         <div id="label-column" >
           <ul>
             <li>
-              <span class="label">Aujourd'hui</span></li>
+              <span class="label labeloff">Aujourd'hui</span></li>
             <li>
-              <span class="label">En attente</span></li>
+              <span class="label labeloff">En attente</span></li>
             <li>
-              <span class="label">Important</span></li>
+              <span class="label labelon">Important</span></li>
             <li>
-              <span class="label">Maison</span></li>
+              <span class="label labeloff">Maison</span></li>
              <li>
-              <span class="label">Kiné</span></li>
+              <span class="label labelon">Kiné</span></li>
             <li>
-              <span class="label">Ludi Nostrum</span></li>
+              <span class="label labeloff">Ludi Nostrum</span></li>
             <li>
-              <span class="label">Mes jeux</span></li>
+              <span class="label labeloff">Mes jeux</span></li>
             <li>
-              <span class="label">Recettes</span></li>
+              <span class="label labeloff">Recettes</span></li>
+            <li>
+              <span class="label labeloff"> + </span></li>
           </ul>
         </div>
 
